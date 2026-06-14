@@ -5,9 +5,11 @@ This is repo is just going to be uploading my AWS scripts (BOTO3 on python) to g
 Until now there is only 1 script but it might increase later on.
 
 ## scripts
-- `boto3test.py` — list all S3 buckets
-yea thats it bye
+- `boto3test.py` — list all S3 buckets(before)
 
+now its listes EC2
+  
+yea thats it bye :P
 
 
 
