@@ -2,13 +2,13 @@
 
 Hello, first of all thank you for being here.
 This is repo is just going to be uploading my AWS scripts (BOTO3 on python) to github.
-Until now there is only 1 script but it might increase later on.
-I used Localstack for this
+
 
 ## Scripts
 - `boto3test.py` — lists, start, stop, and reboot EC2 instances that are filtered
 - `S3.py` — creates a S3 bucket, uploads a simple file (file.txt), and sets for it set public policy
 - `IAM.py` — list IAM users and attached policies
+- `IAM.py` — list IAM users, attached policies, and roles
 - `sg.py` — describe security groups in default VPC
 - `cloudinfo.py` — cloud info CLI using click and rich
 
@@ -35,3 +35,4 @@ python cloudinfo.py --service ec2  # EC2 only
 ```
 
 yep thats it thank you for reading :P
+

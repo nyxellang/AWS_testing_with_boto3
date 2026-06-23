@@ -25,6 +25,18 @@ try:
         policies = IAM.list_attached_user_policies(UserName=user["UserName"])
         for policy in policies["AttachedPolicies"]:
             print(f"  Policy: {policy['PolicyName']}")
+
+    roles = IAM.list_roles()
+
+    for role in roles["Roles"]:
+        print(f"Role: {role['RoleName']}")
+
+        attached = IAM.list_attached_role_policies(RoleName=role["RoleName"])
+
+        for policy in attached["AttachedPolicies"]:
+            print(f"  Policy: {policy['PolicyName']}\n")
+
+    logging.info("Fetched attached roles successfully")
 except ClientError as e:
     error_code = e.response["Error"]["Code"]
     error_msg = e.response["Error"]["Message"]
